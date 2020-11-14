@@ -6,7 +6,8 @@
 -- Generation Time: Apr 23, 2019 at 07:53 PM
 -- Server version: 10.1.34-MariaDB
 -- PHP Version: 7.2.7
-
+-- Create database onlineshop;
+-- use onlineshop;
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
 START TRANSACTION;
@@ -26,7 +27,7 @@ DELIMITER $$
 --
 -- Procedures
 --
-CREATE DEFINER=`root`@`localhost` PROCEDURE `getcat` (IN `cid` INT)  SELECT * FROM categories WHERE cat_id=cid$$
+CREATE DEFINER=`admin`@`database-1.cgc4rlsrtywf.us-east-2.rds.amazonaws.com` PROCEDURE `getcat` (IN `cid` INT)  SELECT * FROM categories WHERE cat_id=cid$$
 
 DELIMITER ;
 
